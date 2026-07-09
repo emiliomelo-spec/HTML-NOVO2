@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Saúde Mental e Juventude</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f7fb;
+            padding:40px;
+            color:#333;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            background:#fff;
+            padding:35px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,.15);
+        }
+
+        h1{
+            color:#2c3e50;
+            margin-bottom:10px;
+        }
+
+        h2{
+            margin-top:30px;
+            margin-bottom:15px;
+            color:#0d6efd;
+            border-bottom:2px solid #0d6efd;
+            padding-bottom:5px;
+        }
+
+        p{
+            margin-bottom:20px;
+        }
+
+        .question{
+            margin-bottom:25px;
+        }
+
+        label{
+            display:block;
+            margin:8px 0;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:6px;
+            margin-top:8px;
+        }
+
+        textarea{
+            resize:vertical;
+            min-height:120px;
+        }
+
+        button{
+            margin-top:20px;
+            background:#0d6efd;
+            color:white;
+            border:none;
+            padding:15px 25px;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#0b5ed7;
+        }
+
+        .info{
+            background:#eef5ff;
+            border-left:5px solid #0d6efd;
+            padding:15px;
+            margin-bottom:25px;
+            border-radius:6px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Saúde Mental e Juventude</h1>
+
+<p><strong>Pesquisa:</strong> O adoecimento psíquico causado pela dependência de telas e redes sociais.</p>
+
+<div class="info">
+Este formulário possui finalidade exclusivamente educativa e busca compreender como o uso das telas e das redes sociais pode influenciar a saúde mental dos jovens.
+</div>
+
+<!-- Dados Gerais -->
+
+<h2>Dados Gerais</h2>
+
+<div class="question">
+<label>1. Qual é a sua idade?</label>
+
+<label><input type="radio" name="idade"> Até 12 anos</label>
+<label><input type="radio" name="idade"> 13 a 15 anos</label>
+<label><input type="radio" name="idade"> 16 a 18 anos</label>
+<label><input type="radio" name="idade"> 19 a 24 anos</label>
+<label><input type="radio" name="idade"> Acima de 24 anos</label>
+
+</div>
+
+<div class="question">
+
+<label>2. Qual é o seu gênero?</label>
+
+<label><input type="radio" name="genero"> Feminino</label>
+<label><input type="radio" name="genero"> Masculino</label>
+<label><input type="radio" name="genero"> Outro</label>
+<label><input type="radio" name="genero"> Prefiro não responder</label>
+
+</div>
+
+<!-- Uso das telas -->
+
+<h2>Uso das Telas</h2>
+
+<div class="question">
+
+<label>3. Quantas horas por dia você passa usando celular, computador ou tablet?</label>
+
+<select>
+<option>Selecione...</option>
+<option>Menos de 2 horas</option>
+<option>2 a 4 horas</option>
+<option>4 a 6 horas</option>
+<option>6 a 8 horas</option>
+<option>Mais de 8 horas</option>
+</select>
+
+</div>
+
+<div class="question">
+
+<label>4. Qual rede social você utiliza com maior frequência?</label>
+
+<select>
+<option>Selecione...</option>
+<option>Instagram</option>
+<option>TikTok</option>
+<option>WhatsApp</option>
+<option>X (Twitter)</option>
+<option>Facebook</option>
+<option>Outra</option>
+</select>
+
+</div>
+
+<div class="question">
+
+<label>5. Você costuma usar o celular antes de dormir?</label>
+
+<label><input type="radio" name="sono"> Sempre</label>
+<label><input type="radio" name="sono"> Frequentemente</label>
+<label><input type="radio" name="sono"> Às vezes</label>
+<label><input type="radio" name="sono"> Raramente</label>
+<label><input type="radio" name="sono"> Nunca</label>
+
+</div>
+
+<!-- Saúde Mental -->
+
+<h2>Saúde Mental</h2>
+
+<div class="question">
+
+<label>6. Você acredita que o uso das redes sociais influencia sua saúde mental?</label>
+
+<label><input type="radio" name="mental"> Muito</label>
+<label><input type="radio" name="mental"> Um pouco</label>
+<label><input type="radio" name="mental"> Pouco</label>
+<label><input type="radio" name="mental"> Não influencia</label>
+
+</div>
+
+<div class="question">
+
+<label>7. Após utilizar redes sociais por muito tempo, como você costuma se sentir?</label>
+
+<label><input type="radio" name="sentimento"> Feliz</label>
+<label><input type="radio" name="sentimento"> Ansioso(a)</label>
+<label><input type="radio" name="sentimento"> Estressado(a)</label>
+<label><input type="radio" name="sentimento"> Cansado(a)</label>
+<label><input type="radio" name="sentimento"> Indiferente</label>
+
+</div>
+
+<div class="question">
+
+<label>8. Você já comparou sua aparência ou estilo de vida com pessoas das redes sociais?</label>
+
+<label><input type="radio" name="comparacao"> Frequentemente</label>
+<label><input type="radio" name="comparacao"> Às vezes</label>
+<label><input type="radio" name="comparacao"> Raramente</label>
+<label><input type="radio" name="comparacao"> Nunca</label>
+
+</div>
+
+<div class="question">
+
+<label>9. Você sente necessidade de verificar notificações constantemente?</label>
+
+<label><input type="radio" name="notificacao"> Sempre</label>
+<label><input type="radio" name="notificacao"> Frequentemente</label>
+<label><input type="radio" name="notificacao"> Às vezes</label>
+<label><input type="radio" name="notificacao"> Nunca</label>
+
+</div>
+
+<!-- Hábitos -->
+
+<h2>Hábitos</h2>
+
+<div class="question">
+
+<label>10. O uso do celular já prejudicou seu sono?</label>
+
+<label><input type="radio" name="sono2"> Sim, muitas vezes</label>
+<label><input type="radio" name="sono2"> Sim, algumas vezes</label>
+<label><input type="radio" name="sono2"> Raramente</label>
+<label><input type="radio" name="sono2"> Nunca</label>
+
+</div>
+
+<div class="question">
+
+<label>11. O uso das redes sociais já prejudicou seus estudos?</label>
+
+<label><input type="radio" name="estudos"> Sim</label>
+<label><input type="radio" name="estudos"> Não</label>
+
+</div>
+
+<div class="question">
+
+<label>12. Você costuma deixar de conversar pessoalmente para usar o celular?</label>
+
+<label><input type="radio" name="conversa"> Sempre</label>
+<label><input type="radio" name="conversa"> Frequentemente</label>
+<label><input type="radio" name="conversa"> Às vezes</label>
+<label><input type="radio" name="conversa"> Nunca</label>
+
+</div>
+
+<!-- Soluções -->
+
+<h2>Soluções</h2>
+
+<div class="question">
+
+<label>13. Você acredita que as escolas deveriam ensinar sobre o uso consciente das redes sociais?</label>
+
+<label><input type="radio" name="escola"> Sim</label>
+<label><input type="radio" name="escola"> Não</label>
+<label><input type="radio" name="escola"> Talvez</label>
+
+</div>
+
+<div class="question">
+
+<label>14. O que poderia ajudar a diminuir a dependência das redes sociais? (Marque até 3 opções)</label>
+
+<label><input type="checkbox"> Educação digital nas escolas</label>
+<label><input type="checkbox"> Limites de tempo de uso</label>
+<label><input type="checkbox"> Mais atividades esportivas</label>
+<label><input type="checkbox"> Apoio psicológico</label>
+<label><input type="checkbox"> Convivência familiar</label>
+<label><input type="checkbox"> Campanhas de conscientização</label>
+<label><input type="checkbox"> Regulamentação das plataformas</label>
+
+</div>
+
+<div class="question">
+
+<label>15. Em sua opinião, quem possui maior responsabilidade na prevenção da dependência digital?</label>
+
+<select>
+<option>Selecione...</option>
+<option>Família</option>
+<option>Escola</option>
+<option>Governo</option>
+<option>Empresas de tecnologia</option>
+<option>O próprio usuário</option>
+<option>Todos os anteriores</option>
+</select>
+
+</div>
+
+<!-- Pergunta Aberta -->
+
+<h2>Pergunta Aberta</h2>
+
+<div class="question">
+
+<label>16. Na sua opinião, quais são os maiores impactos das redes sociais na saúde mental dos jovens?</label>
+
+<textarea placeholder="Digite sua resposta..."></textarea>
+
+</div>
+
+<form>
+   <input type="text">
+   <button type="submit">Enviar</button> <!-- Precisa estar aqui dentro -->
+</form>
+
+</div>
+
+</body>
+</html>
