@@ -1,0 +1,12 @@
+/* Centraliza apenas os títulos principais */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Centraliza todas as imagens */
+img {
+    display: block;
+    margin: 25px auto;
+}
