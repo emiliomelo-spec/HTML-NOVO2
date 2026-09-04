@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando API</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="javas.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Busca de Pokémon</h2>
+        
+        <!-- Campo de busca e botão -->
+
+        <div class="busca">
+            <input type="text" id="campobusca" type="text" placeholder="Busque seu Pikomon...">
+            <button id="btnBuscar">Pesquisar</button>
+          
+            <!-- Card com as informações do Pokémon (começa escondido) -->
+        </div>
+       
+        <div class="resultado" id="escondido">
+            <img id="pokeImg" src="" alt="Imagem do Pokémon">
+            <h3 id="pokeNome"></h3>
+            <p><strong>ID:</strong> <span id="pokeId"></span></p>
+            <p><strong>Altura:</strong> <span id="pokeAltura"></span></p>
+            <p><strong>Peso:</strong> <span id="pokePeso"></span></p>
+            <p><strong>Tipo:</strong> <span id="pokeTipo"></span></p>
+        </div>
+
+        <div id="msgErro" class="escondido">
+            Pokémon não encontrado. Tente novamente!
+        </div>
+    </div>
+</body>
+
+</html>
